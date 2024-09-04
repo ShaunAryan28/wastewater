@@ -5,7 +5,7 @@ const app=express();
 app.use(parser.urlencoded({extended:true})); //urlencoded to parse the data from the html form. Extended to allow to post nested objects.
 
 app.get("/",function(req,res){
-    res.sendFile(__dirname+"/BODseeded.html"); //__dirname gives file path of current file
+    res.sendFile(__dirname+"/index.html"); //__dirname gives file path of current file
 });
 
 
