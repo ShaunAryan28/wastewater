@@ -32,7 +32,7 @@ This is a simple calculator application built using Node.js and Express.js. It p
    - The result will be displayed on the page.
 
 4. BMI Calculator Page:
-   - Visit [http://localhost:3000/bmi](http://localhost:3000/bmi) to access the BMI calculator.
+   - Visit [http://localhost:3000/BODseeded](http://localhost:3000/BODseeded) to access the BMI calculator.
    - Enter your height and weight in the provided input fields.
    - Click the "Calculate BMI" button.
    - The calculated BMI will be displayed on the page.
