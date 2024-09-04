@@ -11,7 +11,7 @@ app.get("/",function(req,res){
 
 
 
-app.post("/BODseeded",function(req,res){
+app.post("/",function(req,res){
     var D1=Number(req.body.D1);
     var D2=Number(req.body.D2);
     var D2=Number(req.body.D2);
