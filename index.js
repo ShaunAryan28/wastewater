@@ -8,10 +8,12 @@ app.get("/",function(req,res){
     res.sendFile(__dirname+"/index.html"); //__dirname gives file path of current file
 });
 
+app.get("/BODs",function(req,res){
+    res.sendFile(__dirname+"/BODs.html"); //__dirname gives file path of current file
+});
 
 
-
-app.post("/",function(req,res){
+app.post("/BODs",function(req,res){
     var D1=Number(req.body.D1);
     var D2=Number(req.body.D2);
     var D2=Number(req.body.D2);
@@ -21,5 +23,5 @@ app.post("/",function(req,res){
 })
 
 app.listen(3000,function(){
-    console.log("Server active on port 3000");
+    console.log("http://localhost:3000");
 });
