@@ -12,6 +12,10 @@ app.get("/",function(req,res){
 app.get("/BODs",function(req,res){
     res.sendFile(__dirname+"/BODs.html"); //__dirname gives file path of current file
 });
+app.get("/nf",function(req,res){
+    res.sendFile(__dirname+"/nf.html"); //__dirname gives file path of current file
+});
+
 
 
 app.post("/BODs",function(req,res){
@@ -21,7 +25,13 @@ app.post("/BODs",function(req,res){
     var BODseeded= ((D1-D2)/SV)*300;
     res.send("The calculated BOD(seeded) is : "+BODseeded+"ml");
 })
-
+app.post("/nf",function(req,res){
+    var D1=Number(req.body.D1);
+    var D2=Number(req.body.D2);
+    var SV=Number(req.body.SV);
+    var BODseeded= ((D1-D2)/SV)*300;
+    res.send("The calculated BOD(seeded) is : "+BODseeded+"ml");
+})
 app.listen(3000,function(){
     console.log("http://localhost:3000");
 });
